@@ -7,9 +7,9 @@ const objPersonagem = {
       classe: "mago"
     },
     status: "desaparecido"
-   }
+}
 
-   delete objPersonagem.aliado
+delete objPersonagem.aliado
 delete objPersonagem["status"]
  
 console.log(objPersonagem.aliado) //undefined
@@ -39,18 +39,18 @@ const cliente = {
     console.log(`A chave ${chave} tem valor ${cliente[chave]}`);
   });
 
-  const pessoa = {
+  let pessoa = {
     nome: "Luma",
     profissao: "Engenheira",
   };
   
-  console.log(pessoa.nome);
+  console.log(pessoa.nome); //Luma
   
-  console.log(pessoa.telefone);
+  console.log(pessoa.telefone); //undefined
   
   pessoa.telefone = "11 2223333444";
   
-  console.log(pessoa.telefone);
+  console.log(pessoa.telefone); //11 2223333444
   
   pessoa.nome = "Luma Silva";
   
@@ -60,4 +60,6 @@ const cliente = {
     nome: "Pedro",
   };
   
-  //pessoa = novaPessoa; // isso dá erro
+  pessoa = novaPessoa;
+
+  console.log(pessoa); //Pedro
