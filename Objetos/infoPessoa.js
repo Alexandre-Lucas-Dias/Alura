@@ -122,7 +122,7 @@ const cliente = {
 }
 
 function mostrarSaldo(client){
-    console.log(`O cliente ${client.nome} possui em seu saldo bancário a quantia de R$${client.conta.saldo},00`);
+    console.log(`O cliente ${client.nome} possui em seu saldo bancário a quantia de R$${client.conta.saldo}`);
 }
 
 cliente.conta.depositar(10)
